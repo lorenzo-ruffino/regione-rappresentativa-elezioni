@@ -2,9 +2,6 @@ library(tidyverse)
 library(janitor)
 library(data.table)
 
-setwd("C:/Users/loren_afkjpxa/OneDrive/Documenti/DataViz_Personali/Regione_Rappresentativa")
-
-
 # Politiche 2022
 
 pol_22 = as.data.frame(fread("Input/Camera/camera-20220925/Camera_Italia_LivComune.txt"))%>%
@@ -291,7 +288,7 @@ data = bind_rows( pol_48,
                              regione == 'VERONA-PADOVA-VICENZA-ROVIGO' ~ 'VENETO',
                              regione == 'TORINO-NOVARA-VERCELLI' ~ 'PIEMONTE',
                              regione == 'NAPOLI-CASERTA' ~ 'CAMPANIA',
-                             regione == 'BOLOGNA-FERRARA-RAVENNA-FORLÌ' ~ 'EMILIA-ROMAGNA',
+                             regione == 'BOLOGNA-FERRARA-RAVENNA-FORLÃŒ' ~ 'EMILIA-ROMAGNA',
                              regione == 'CATANIA-MESSINA-SIRACUSA-RAGUSA-ENNA' ~ 'SICILIA',
                              regione == 'BRESCIA-BERGAMO' ~ 'LOMBARDIA',
                              regione == "PARMA-MODENA-PIACENZA-REGGIO NELL'EMILIA" ~ 'EMILIA-ROMAGNA',
